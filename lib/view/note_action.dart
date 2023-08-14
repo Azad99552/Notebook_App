@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:noteapp/model/note.dart';
-import 'package:noteapp/viewmodel/db_helper.dart';
+import 'package:notebook/model/note.dart';
+import 'package:notebook/viewmodel/db_helper.dart';
 
 DbHelper helper = DbHelper.instance;
 
@@ -11,6 +11,7 @@ class NoteAction extends StatefulWidget {
   const NoteAction({Key? key, required this.note}) : super(key: key);
 
   @override
+  
   // ignore: no_logic_in_create_state
   State<NoteAction> createState() => _NoteActionState(note);
 }
@@ -85,8 +86,7 @@ class _NoteActionState extends State<NoteAction> {
                 ),
               ),
               Padding(
-                // padding:
-                //     EdgeInsets.only(top: _formDistance, bottom: _formDistance),
+                
                 padding: const EdgeInsets.fromLTRB(8, 10, 8, 10),
                 child: TextField(
                   controller: descController,
