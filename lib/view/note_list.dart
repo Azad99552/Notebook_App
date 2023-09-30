@@ -110,6 +110,7 @@ class _NoteListState extends State<NoteList> {
           ),
           onPressed: () {
             navigateToDetails(Note("", 3, ""));
+            
           }),
 
     );
